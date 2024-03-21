@@ -62,3 +62,14 @@ Thu 21 Mar 2024 08:14:14 PM UTC:
  tests:  4|1
 total_score: 50/70
 8a841dc
+Thu 21 Mar 2024 08:28:28 PM UTC: 
+ exercises.c | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:129:13: error: unused variable ‘primero’ [-Werror=unused-variable]
+  129 |       char* primero = top(pila);
+      |             ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+dd3c9d0
