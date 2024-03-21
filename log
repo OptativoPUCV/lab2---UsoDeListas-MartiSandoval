@@ -45,3 +45,9 @@ exercises.c:99:10: error: unused variable ‘pila_aux’ [-Werror=unused-variabl
 cc1: all warnings being treated as errors
 Compilation failed
 d9817b8
+Thu 21 Mar 2024 04:02:49 AM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  3|2
+total_score: 40/70
+19319ea
