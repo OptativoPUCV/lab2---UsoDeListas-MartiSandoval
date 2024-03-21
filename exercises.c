@@ -126,16 +126,15 @@ int parentesisBalanceados(char *cadena) {
     }
     else if (top(pila) == NULL) return 0;
     else {
-      if (signo == ')' || signo == ']' || signo == '}') {
+      char *primero = top(pila);
+      if ((signo == '(' && *primero == ')') || (signo == '[' && *primero == ']') || (signo == '{' && *primero == '}')) {
         pop(pila);
       }
       else {
-        imprime_y_vacia_pila(pila);
         return 0; 
       }
     }
     if (top(pila) == NULL) {
-      imprime_y_vacia_pila(pila);
       return 1;
     }
   }
