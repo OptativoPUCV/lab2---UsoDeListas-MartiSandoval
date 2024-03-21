@@ -34,3 +34,14 @@ Thu 21 Mar 2024 04:02:04 AM UTC:
  tests:  3|2
 total_score: 40/70
 c2b6689
+Thu 21 Mar 2024 04:02:44 AM UTC: 
+ exercises.c | 8 +-------
+ 1 file changed, 1 insertion(+), 7 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:99:10: error: unused variable ‘pila_aux’ [-Werror=unused-variable]
+   99 |   Stack* pila_aux = create_stack();
+      |          ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d9817b8
