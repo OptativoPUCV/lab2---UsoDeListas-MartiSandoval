@@ -129,9 +129,15 @@ int parentesisBalanceados(char *cadena) {
       if (signo == ')' || signo == ']' || signo == '}') {
         pop(pila);
       }
-      else return 0;
+      else {
+        imprime_y_vacia_pila(pila);
+        return 0; 
+      }
     }
-    if (top(pila) == NULL) return 1;
+    if (top(pila) == NULL) {
+      imprime_y_vacia_pila(pila);
+      return 1;
+    }
   }
   
   return 0;
